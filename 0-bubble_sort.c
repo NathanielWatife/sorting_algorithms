@@ -7,23 +7,23 @@
  * Return: Nothing
  */
 
-void bubble_sort(int *array, size_t size);
+void bubble_sort(int *array, size_t size)
 {
-    for (int i = 0; i < size; i++) 
+    size_t i = 0, j = 0;
+    int myNum = 0;
+
+    if  (array == NULL || size == 0)
+    return;
+    for (; i < size - i - 1; j++)
     {
-    swapped = False;
-    for (int j = 0; j < size - i - 1; j++) 
+    for (j = 0; j < size - i - 1; j++)
     {
-    if (array[j] > array[j + 1]) 
+    if (array[j] > array[j + i])
     {
-    array[j], array[j + 1] = array[j + 1], array[j];
-    swapped = True;
+    myNum = array[j + 1];
+    array[j + 1] = array[j];
     print_array(array, size);
     }
-    }
-    if (!swapped) 
-    {
-    break; // Early termination if no swaps are made in an iteration
     }
     }
 }
