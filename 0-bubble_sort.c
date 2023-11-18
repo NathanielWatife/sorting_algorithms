@@ -10,7 +10,9 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t i = 0, j = 0;
-	// int aux = 0;
+	/**
+	 * int aux = 0;
+	 */
 
 	if  (array == NULL || size == 0)
 	return;
@@ -20,9 +22,13 @@ void bubble_sort(int *array, size_t size)
 	{
 	if (array[j] > array[j + i])
 	{
-	// aux = array[j + 1];
+	/**
+	 * aux = array[j + 1];
+	 */
 	array[j + 1] = array[j];
-	// print_array(array, size);
+	/** 
+	 * print_array(array, size);
+	 */
 	}
 	}
 	}
