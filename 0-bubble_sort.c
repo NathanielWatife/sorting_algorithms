@@ -7,29 +7,24 @@
  * Return: Nothing
  */
 
-void bubble_sort(int *array, size_t size)
+void bubble_sort(int *array, size_t size) 
 {
-	size_t i = 0, j = 0;
-	/**
-	 * int aux = 0;
-	 */
+    size_t i = 0, j = 0;
 
-	if  (array == NULL || size == 0)
-	return;
-	for (; i < size - i - 1; j++)
+    if  (array == NULL || size == 0)
+    return;
+
+    for (; i < size - i - 1; i++) 
 	{
-	for (j = 0; j < size - i - 1; j++)
+    for (j = 0; j < size - i - 1; j++) 
 	{
-	if (array[j] > array[j + i])
+    if (array[j] > array[j + 1]) 
 	{
-	/**
-	 * aux = array[j + 1];
+    /**
+	 * Swap elements directly without using a temporary variable
 	 */
-	array[j + 1] = array[j];
-	/** 
-	 * print_array(array, size);
-	 */
-	}
-	}
-	}
+    array[j + 1] = array[j];
+    }
+    }
+    }
 }
